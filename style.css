@@ -59,15 +59,16 @@ span {
   text-align: center;
 }
 
+.arrow {
+  color: #fff;
+
+}
+
 img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border: solid;
-}
-
-a {
-  text-decoration: none;
 }
 
 .name {
@@ -79,8 +80,18 @@ a {
   font-size: 1.5rem;
 }
 
-p {
+.p1 {
 	color: whitesmoke;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+	line-height: 2rem;
+	margin-top: 5px;
+  padding: 20px;
+}
+
+.contato {
+  color: whitesmoke;
 	font-size: 1rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
@@ -90,12 +101,17 @@ p {
 .form {
   margin: 0 auto;
   transition: 0.5s;
+  text-align: center;
 }
 
 .form input {
+  width: 25%;
+  margin: auto;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
   height: 30px;
-  width: 30%;
-  text-align: center;
+
 }
 .form button {
   height: 30px;
