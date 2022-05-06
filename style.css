@@ -5,18 +5,54 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
 
-
 body {
-  background: url(./img/pexels-felix-mittermeier-956999.jpg) no-repeat center center fixed;
+  background: url(./img/backg-nsei.jpg) no-repeat center center fixed;
   background-size: cover;
 
+}
+
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: grey;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 00.5s;
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+span {
+  color: grey;
 }
 
 .container {
@@ -27,13 +63,7 @@ img {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border: 2px solid whitesmoke;
-
-}
-
-ul {
-  list-style: none;
-  font-size: 20px;
+  border: solid;
 }
 
 a {
@@ -47,8 +77,6 @@ a {
   transition-property: background-color,  color;
   transition: .3s ease;
   font-size: 1.5rem;
-
-
 }
 
 p {
@@ -61,19 +89,30 @@ p {
 }
 .form {
   margin: 0 auto;
+  transition: 0.5s;
 }
 
 .form input {
   height: 30px;
-  width: 40%;
+  width: 30%;
   text-align: center;
 }
 .form button {
   height: 30px;
   width: 15%;
-
-
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2 px solid grey;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
+.form button:hover {
+  width: 17%;
+  border: none;
+}
 
 
